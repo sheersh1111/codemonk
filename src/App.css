@@ -1,38 +1,321 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}
+body{
+    cursor:url("./cursor.png"),auto;
+}
+.first{
+    display: flex;
+    position: relative;
+    max-width:100%;
+    /* flex-direction: row; */
+    background: rgb(0,0,142);
+}
+.testLeft{
+    position: relative;
+    left:10px;
+    padding-top:10px ;
+}
+.testRight{
+    position: relative;
+    /* left:1000px; */
+    left:63vw;
+    display: flex;
+}
+.testRight > div >span{
+    color:white;
+    position: relative;
+    top:10px;
+}
+.first >div> p{
+    position: relative;
+    left:20px;
+    color: white;
+}
+.first >div> span{
+    color:white;
+   position: relative;
+   top: 10px;
+}
+.stepClass{
+    border-bottom: 10px;
+    border-color: rgb(161, 173, 146);
+    box-shadow: 5px;
+}
+.App{
+    background: rgb(228, 229, 226);
+    width: 100vw;
+}
+.lightPurple{
+    position: relative;
+    color: white;
+    text-align: center;
+    background: rgb(75, 67, 172);
+    height: 40px;
+    width: 80vw;
+    left:10vw;
+}
+.lightPurple>p{
+    position: relative;
+    top:8px;
+}
+.outbox{
+    padding:40px 100px;
+}
+.tableHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    height:50px;
+    align-items: center;
+    padding:0px 50px;
+    border-radius: 10px 10px 0 0;
+}
+.p{
+    width: 30vw;
+}
+.priceValues{
+    color:rgb(161, 161, 161);
+}
+.qty{
+    color:rgb(161, 161, 161);
+}
+.productHeading{
+    font: 400;
+    font-weight: 600;
+    color: grey;
+    font-style: "Montserrat-Black";
+}
+.product{
+    width: 30vw;
+    display: flex;
+    height:100px;
+}
+.product>div>span{
+    color:rgb(161, 161, 161);
+}
+.objects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 50px;
+    background: white;
+    margin-bottom: 1px;
+    height:auto;
+    align-items: center;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quantity{
+    display: flex;
+    align-items: center;
+}
+.products{
+    position: relative;
+    top:3px;
+    /* display: flex; */
+}
+.subtotal>img{
+    margin-left:10px;
+}
+.delivery{
+    width: 300px;
+    position: relative;
+    left: 50px;
+    top: 0px;
+    background: white;
+    padding-top: 70px;
+}
+.delivery>div:last-child{
+    display: flex;
+}
+.delivery>div:last-child>div{
+    display: flex;
+}
+.location{
+    display: flex;
+    height: 40px;
+}
+.location>img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top:17px;
+}
+.location > input{
+    border-style: hidden;
+    vertical-align: text-bottom;
+    position: relative;
+    height:20px;
+    top:17px;
+    width:200px;
+}
+.location >p{
+    color: rgb(0,0,142);
+    font-weight:600 ;
+}
+.free{
+    color:grey;
+    font-size: small;
+}
+.downCat{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    position:relative;
+    top:-53.5px;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+.orderSummary{
+    position: relative;
+    display: flex;
+    padding-top: 11vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right:50px;
+    height: auto;
+    width: 300px;
+}
+.free{
+    color: grey;
+}
+.orderSummary >div >div{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+
+}
+.orderSummary>div:last-child{
+    position: relative;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+}
+.orderSummary>div:last-child>div{
+    font-size: larger;
+}
+.rightside{
+
+}
+.rightSide{
+    position: absolute;
+    left: 250px;
+    text-align: end;
+}
+.totalCash{
+    font-size: larger;
+}
+.checkout{
+    position: relative;
+    top:-15px;
+    font-size: small;
+    color: white;
+    text-align: center;
+    background: rgb(0,0,142);
+    padding: 15px 50px 20px 50px;
+    border-radius: 50px;
+    font-weight: 600;
+    translate: 20px;
+}
+.continue{
+    font-size: small;
+    color: rgb(0,0,142);
+    font-weight: 600;
+}
+/* .od{
+    position: relative;
+    top:0px;
+    margin-top: 100px;
+} */
+.lastCat{
+    background: rgba(0,0,0,.833);
+    padding:0 100px;
+    display: flex;
+    flex-direction: column;
+}
+.impocontact{
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+
+}
+.vertical{
+    border-left: 1px solid white;
+    position: relative;
+    top: 20px;
+    height: 210px;
+    margin-right: 10px;
+}
+.impolinks{
+    display: flex;
+    position: relative;
+    left:-100px;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    width: 500px;
+    translate: 0 20px;
+
+}
+.lorem{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.lorem>span{
+    font-size: small;
+}
+.contacts{
+    padding: 0 0 100px 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    
+}
+.horizontal{
+    /* color: white;
+    background: white; */
+    border-top: 1px solid white;
+}
+.thanks{
+    text-align: end;
+    color: white;
+    font-size: small;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+.cnum{
+    font-size: large;
+}
+.timings{
+    font-size: small;
+}
+.df{
+    display: flex;
+    translate: 0 -5px;
+}
+.support>p{
+    font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.objects:hover{
+    background: rgb(230, 227, 227);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width:600px) {
+.first{
+    width:100%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
